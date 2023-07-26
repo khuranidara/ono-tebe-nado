@@ -41,6 +41,6 @@ navigation a {
 }
 
 .contact-info {
-    width: 240px; /*как прижать без отступов к правому краю родителя header?*/
+    width: 240px; /*как прижать без отступов к правому краю родителя header? */
     text-align: left;
 }
