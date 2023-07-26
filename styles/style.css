@@ -1,1 +1,46 @@
 /* место для вашего кода */
+.header {
+    width: auto;
+    height: auto;
+    background-color:yellow;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 92px;
+    margin-right: 49px;
+    margin-bottom: 92px;
+    margin-left: 51px;
+}
+.menu {
+    list-style: circle;
+    padding: 0;
+    margin: 0;
+}
+.menu li {
+    display: inline;
+    margin-right: 10px;
+}
+.menu li:last-child {
+    margin-right: 0; /* Убираем отступ у последнего пункта меню */
+}
+.menu img {
+    width: 7px;
+    height: 7px;
+    margin-right: 12px;
+}
+navigation a {
+    text-decoration: none;
+    color: black;
+}
+.logo {
+    text-align: center;
+}
+.logo img {
+    width: 148px;
+    height: 105px;
+}
+
+.contact-info {
+    width: 240px; /*как прижать без отступов к правому краю родителя header?*/
+    text-align: left;
+}
