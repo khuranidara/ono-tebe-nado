@@ -11,24 +11,32 @@
   </head>
   <body>
     <header class="header">
-      <nav class="navigation"> <!--элемент навигации-->
-        <ul class="menu">
-          <li><a href="#">главная</a></li>
-          <img src="./images/circle.svg" alt="Маркер">
-          <li><a href="#">посмотреть лоты</a></li>
-          <img src="./images/circle.svg" alt="Маркер">
-          <li><a href="#">об аукционе</a></li>
+      <nav class="navigation"> <!--Навигация-->
+        <ul class="navigation_list">
+          <li class="navigation_list_item navigation_list_item_active header__links-list-item_no-bullit">
+            <a href="#" class="list_item_link">главная</a>
+          </li>
+          <li class="navigation_list_item"><a href="#" class="list_item_link">посмотреть лоты</a></li>
+          <li class="navigation_list_item"><a href="#" class="list_item_link">об аукционе</a></li>
         </ul>
       </nav>
-      <a class="logo"> <!--изображение логотипа-->
-        <img 
+      <a class="header_logo"> <!--Логотип-->
+        <img
+        class="header_logo-image"
         src="./images/logo-black.svg"
-        alt="Логотип">
+        alt="Логотип проекта"
+        />
       </a>
-      <div class="contact-info">
-        <p>+9 999 555 5555</p>
-        <p>info@sobaka.ge</p>
-        <p>наб. Принсенграхт 263-265, Амстердам</p>
+      <div class="header__address"> <!--Блок с адресом-->
+        <address class="address"> 
+          <a class="address_link" href="tel:+99995555555">
+            +9 999 555 5555
+          </a>
+          <a class="address_link" href="mailto:info@sobaka.ge">
+            info@sobaka.ge
+          </a>
+          наб. Принсенграхт 263-265,<br> Амстердам
+        </address>
       </div>
     </header>
     <main>

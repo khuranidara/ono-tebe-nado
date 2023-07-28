@@ -1,46 +1,61 @@
 /* место для вашего кода */
-.header {
-    width: auto;
-    height: auto;
-    background-color:yellow;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.header { /*Заголовок внутри и снаружи*/
     margin-top: 92px;
     margin-right: 49px;
     margin-bottom: 92px;
     margin-left: 51px;
+    /*display: flex;*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Разбиваем на три колонки: левая, центральная и правая */
+    /*justify-content: space-between;*/
+    align-items: center;
+    /*background-color: aquamarine;*/
 }
-.menu {
+.navigation {           /*блок навигации, расположение в header*/
+    justify-self: start; /* Выравниваем по левому краю */
+}
+.navigation_list {      /*внутренняя структура блока нав*/
+    display: flex;
+    flex-direction: row;
+    column-gap: 32px;
+}
+.navigation_list_item { /*стиль списка*/
     list-style: circle;
-    padding: 0;
-    margin: 0;
-}
-.menu li {
-    display: inline;
-    margin-right: 10px;
-}
-.menu li:last-child {
-    margin-right: 0; /* Убираем отступ у последнего пункта меню */
-}
-.menu img {
-    width: 7px;
-    height: 7px;
-    margin-right: 12px;
-}
-navigation a {
-    text-decoration: none;
-    color: black;
-}
-.logo {
-    text-align: center;
-}
-.logo img {
-    width: 148px;
-    height: 105px;
 }
 
-.contact-info {
-    width: 240px; /*как прижать без отступов к правому краю родителя header? */
-    text-align: left;
+.list_item_link{ /*стиль ссылки*/
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    font-size: 18px;
+    line-height: normal;
+    color: #000;
+}
+.navigation_list_item_active .list_item_link { /*активная ссылка*/
+    border-bottom: 0;
+}
+.header__links-list-item_no-bullit{
+    list-style-type: none;
+}
+.header_logo{   /*ширина ссылки*/
+    display: block;
+    width: 148px;
+    justify-self: center; /* Выравниваем по центру */
+}
+.header_logo-image{ /*ширина лого*/
+    width:100%;
+}
+.header__address { /*блок с адресом*/
+    justify-self: end; /* Выравниваем по правому краю */
+}
+.address{  /*контейнер с адресом;*/
+    font-style: normal; /* Сброс стандартных стилей для тега <address> */
+    display: flex;
+    flex-direction: column;
+}
+.address_link{/*оформление tel,email*/
+    color: #000;
+    font-size: 18px;
+    line-height: 24.3px; /* 135% */
+    text-decoration:underline;
+    text-underline-position: under;
 }
