@@ -59,15 +59,16 @@
     text-decoration:underline;
     text-underline-position: under;
 }
-.cover{
+.cover{  /*задний фон*/
     position: relative;
     background-image: url(../images/cover.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
-
+    padding-bottom: 50px;
+    padding-right: 50px;
 }
-.cover::before{
+.cover::before{ /*оверлей*/
     content: "";
     position: absolute;
     top: 0;
@@ -78,7 +79,7 @@
     background: #000;
     z-index: 1;
 }
-.cover_title {
+.cover_title { /*оно тебе надо*/
     position: relative;
     color: #FFF;
     font-size: 100px;
@@ -87,14 +88,54 @@
     line-height: 115%; /* 115px */
     letter-spacing: 30px;
     text-transform: uppercase;
+    padding: 165px 0px 187px 50px;
     z-index: 2;
 }
 .accent-span { /*стиль для всех span (сам по себе span inline, не будет переноса)*/
     display: block;
+}
+.text-begin{
+    text-align: left;
 }
 .text-center {
     text-align: center;
 }
 .text-right {
     text-align: right;
+}
+.cover__description{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 78px;
+    justify-content: right;
+    z-index: 2;
+}
+.cover__description-text{
+    color: #FFF;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 127.273% */
+    text-transform: uppercase;
+    word-spacing: 18px;
+    align-self: center; /*управляет выравниванием конкретного flex элемента по перекрёстной оси*/
+}
+.bet-button{
+    background-color: transparent;
+    border: 1px solid white;
+    color: #FFF;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-top: 12px;
+    padding-right: 32px;
+    padding-bottom: 12px;
+    padding-left: 32px;
 }
