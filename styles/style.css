@@ -351,7 +351,8 @@
     z-index: 1;
 }
 
-.lots__look-more-link {
+.lots__look-more-link { 
+    /*посмотреть больше*/
     display: block;
     height: 23px;
     color: #000;
@@ -360,4 +361,62 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+.about{
+    /*секция «Об аукционе»*/
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 180px;
+    display: grid;
+    align-items: start;
+    background-color: chartreuse;
+    display: grid;
+    grid-template-columns: 430px 1fr; /* Левая колонка фиксированной ширины, правая занимает всё оставшееся пространство */
+    grid-gap: 25px; /* Отступ между колонками */
+}
+.about__left-column{
+    width: 430px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.about__right-column{
+
+}
+.about__logo{
+    width: 240px;
+    height: 240px;
+    background-color: black;
+    border-radius: 50%; /* Создание круглого контейнера */
+    display: flex;
+    justify-content: center; /* Выравнивание логотипа по горизонтали внутри контейнера */
+    align-items: center; /* Выравнивание логотипа по вертикали внутри контейнера */
+}
+.about__logo-image{
+    width: 148px;
+    height: 114px;
+}
+.about__title{
+    color: #000;
+    font-family: Raleway;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.about__text{
+    color: #000;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.about__text:first-child {
+    padding-bottom: 25px; /* Нижний отступ только для первого абзаца */
 }
