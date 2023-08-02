@@ -369,7 +369,7 @@
     margin-bottom: 180px;
     display: grid;
     align-items: start;
-    background-color: chartreuse;
+
     display: grid;
     grid-template-columns: 430px 1fr; /* Левая колонка фиксированной ширины, правая занимает всё оставшееся пространство */
     grid-gap: 25px; /* Отступ между колонками */
@@ -417,6 +417,54 @@
     font-weight: 400;
     line-height: normal;
 }
-.about__text:first-child {
-    padding-bottom: 25px; /* Нижний отступ только для первого абзаца */
+.about__text:first-of-type {
+    margin-bottom: 25px; /* Нижний отступ только для первого абзаца */
 }
+.footer {
+    margin-right: 50px;
+    margin-bottom: 90px;
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    
+}
+.footer_address{
+  display: flex;
+  align-items: flex-start; 
+}
+.footer_center-column{
+    display: block;
+    justify-self: center;
+}
+.footer_menu {
+    text-align: center; /* Выравнивание текста по центру внутри навигации */
+}
+.footer__menu-list {
+    list-style: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем внутренние отступы у списка */
+}
+.footer__menu-link {
+    text-decoration: none;
+    border-bottom: 1px solid black;
+}
+.footer__menu-link_active{
+    text-decoration: none;
+}
+.footer_right-column{
+    display: flex;
+    justify-self: end; /* Выравнивание элементов по центру */
+}
+.footer__social-list {
+    list-style: none; /* Убираем маркеры списка */
+    display: flex;
+    flex-direction: row;
+    gap:45px;
+    width: 240px;
+    height: 48px;
+}
+
+
+
+
+
