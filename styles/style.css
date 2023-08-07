@@ -431,7 +431,7 @@ body {
     list-style: none; /* Убираем маркеры списка */
     padding:0;
 }
-.footer__menu-list-item{
+.footer__menu-list-item {
     font-weight: 400;
     font-size: 18px;
 }
