@@ -1,4 +1,9 @@
 /* место для вашего кода */
+body {
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+}
 .header {
     /*Заголовок внутри и снаружи*/
     margin-top: 92px;
@@ -14,6 +19,7 @@
 .navigation {
     /*блок навигации, расположение в header*/
     justify-self: start;
+    margin-bottom: 2px; /*Pixel Perfect*/
     /* Выравниваем по левому краю */
 }
 
@@ -52,7 +58,7 @@
 .header_logo {
     /*ширина ссылки*/
     display: block;
-    width: 148px;
+    width: 138px; /*Pixel Perfect*/
     justify-self: center;
     /* Выравниваем по центру */
 }
@@ -74,16 +80,26 @@
     /* Сброс стандартных стилей для тега <address> */
     display: flex;
     flex-direction: column;
+    padding-bottom: 7px; /*Pixel Perfect*/
+    padding-left: 5px; /*Pixel Perfect*/
 }
 
 .address_link {
     /*оформление tel,email*/
     color: #000;
-    font-size: 18px;
-    line-height: 24.3px;
-    /* 135% */
+    font-family: Raleway;
+    font-style: normal;
+    line-height: 135%; /* 135% */
     text-decoration: underline;
     text-underline-position: under;
+    font-size: 18px;
+    font-weight: 400;
+}
+.address p {
+    padding-top: 2px; /*Pixel Perfect*/
+    max-width: 240px;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .cover {
@@ -122,7 +138,7 @@
     text-transform: uppercase;
     padding-top: 165px;
     padding-right: 50px;
-    padding-bottom: 135px;
+    padding-bottom: 125px; /*Pixel Perfect, было 135px*/
     padding-left: 50px;
     gap: 20px;
     z-index: 2;
@@ -141,10 +157,12 @@
 
 .text-center {
     text-align: center;
+    padding-top: 10px; /*Pixel Perfect*/
 }
 
 .text-right {
     text-align: right;
+    padding-top: 8px; /*Pixel Perfect*/
 }
 
 .letter-spacing-extended {
@@ -250,7 +268,7 @@
     position: relative;
     background-repeat: no-repeat;
     background-position: center;
-     background-size: cover;
+    background-size: cover;
     /*помогло отодвинуть параграф от заголовка*/
 }
 
@@ -329,12 +347,16 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    text-decoration-line: underline;
+    text-underline-position: under;
+    margin-top: 31px; /* Отступ сверху Pixel Perfect*/
+    margin-left: 40px; /* Отступ слева */
 }
 .about {
     /*секция «Об аукционе»*/
     margin-right: 50px;
     margin-left: 50px;
-    margin-bottom: 180px;
+    margin-bottom: 160px; /*было 180px*/
     display: grid;
     align-items: start;
     grid-template-columns: 430px 1fr; /* Левая колонка фиксированной ширины, правая занимает всё оставшееся пространство */
@@ -342,7 +364,7 @@
 }
 .about__left-column {
     width: 430px;
-    height: 450px;
+    /*height: 450px; Необходимо удалить высоту у всех контентных и текстовых блоков.*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -385,28 +407,33 @@
 }
 .footer {
     margin-right: 50px;
-    margin-bottom: 90px;
-    margin-left: 50px;
+    margin-bottom: 110px;
+    margin-left: 45px; /*Pixel Perfect было 50px*/
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    
 }
 .footer_address {
   display: flex;
-  align-items: flex-start;
-
+  align-items:flex-start;
+  padding-top: 21px;
 }
 .footer_center-column {
     display: block;
     justify-self: center;
+    padding-bottom: 15px;
+    padding-left: 5px;
 }
 .footer_menu {
-    text-align: center; /* Выравнивание текста по центру внутри навигации */
+    text-align:center; /* Выравнивание текста по центру внутри навигации */
 }
 .footer__menu-list {
     list-style: none; /* Убираем маркеры списка */
-    padding: 0; /* Убираем внутренние отступы у списка */
+    padding:0;
+}
+.footer__menu-list-item{
+    font-weight: 400;
+    font-size: 18px;
 }
 .footer__menu-link {
     text-decoration: none;
@@ -425,7 +452,8 @@
     flex-direction: row;
     gap:45px;
     width: 240px;
-    height: 48px;
+    padding-bottom: 25px; /*Pixel Perfect*/
+    /*height: 48px; Необходимо удалить высоту у всех контентных и текстовых блоков.*/
 }
 
 
